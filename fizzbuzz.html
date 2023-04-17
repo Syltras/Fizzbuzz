@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FizzBuzz</title>
+</head>
+<body>
+    <Script>
+
+        let fizz = 0
+        let buzz = 0
+        let fizzbuzz = 0
+
+        for (let index = 0; index <= 100; index++) {
+            if (index % 3 == 0 && index % 5 == 0) {
+                console.log("FizzBuzz");
+                fizzbuzz++
+            }
+            else if (index % 5 == 0) {
+                console.log("Buzz");
+                buzz++
+            }
+            else if (index % 3 == 0) {
+                console.log("Fizz");
+                fizz++
+            }
+            else{
+                console.log(index);
+            }
+        }
+        console.log("fizz is " + fizz);
+        console.log("buzz is " + buzz);
+        console.log("fizzbuzz is " + fizzbuzz);
+    </Script>
+</body>
+</html>
